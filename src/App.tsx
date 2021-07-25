@@ -1,6 +1,16 @@
+import Router from './router'
+
+// COMPONENTS
+import { Layout } from './components'
+
+// STYLES
+
+
 const App = () => {
   return (
-    <div>Hello World</div>
+    <Layout>
+      <Router />
+    </Layout>
   );
 }
 
