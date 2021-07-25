@@ -1,24 +1,22 @@
 import { Route, Switch } from "react-router-dom";
 
 // PAGES
-import {HomePage } from '../pages'
+import { HomePage, ProductsPage } from '../pages'
 
 
 const Router = () => {
     return(
-        <>
-            <Switch>
-                <Route exact path="/">
-                    <HomePage/>
-                </Route>
-                <Route path="/products">
-                    {"Products"}
-                </Route>
-                <Route path="/users">
-                    {"Users"}
-                </Route>
-            </Switch>
-        </>
+        <Switch>
+            <Route exact path="/">
+                <HomePage/>
+            </Route>
+            <Route path="/products">
+                <ProductsPage />
+            </Route>
+            <Route path="/users">
+                {"Users"}
+            </Route>
+        </Switch>
     )
 }
 
