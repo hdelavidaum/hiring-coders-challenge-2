@@ -5,6 +5,7 @@ export const Container = styled.section`
     height: 90%;
 
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;

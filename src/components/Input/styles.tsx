@@ -29,3 +29,13 @@ export const Container = styled.div`
 
     font-size: 21px;
 `
+
+export const SubLabel = styled.p`
+    margin: 5px 0;
+
+    font-size: 15px;
+    color: #FF073A;
+    font-weight: 100;
+
+    text-align: left;
+`
