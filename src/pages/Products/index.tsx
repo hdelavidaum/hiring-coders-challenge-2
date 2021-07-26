@@ -44,6 +44,13 @@ const ProductsPage = ():JSX.Element => {
 
             if (!!!productsRegistered) {
                 window.localStorage.setItem('productsData', JSON.stringify([product]))
+
+                setProduct({
+                    name: '',
+                    price: '',
+                    quantity: undefined,
+                })
+
                 return
             }
 
@@ -64,10 +71,17 @@ const ProductsPage = ():JSX.Element => {
                 })
 
                 window.localStorage.setItem('productsData', JSON.stringify(productsRegistered))
+
+                setProduct({
+                    name: '',
+                    price: '',
+                    quantity: undefined,
+                })
+
                 return
             }
 
-            productsRegistered = {...productsRegistered, ...product}
+            productsRegistered = [...productsRegistered, product]
             window.localStorage.setItem('productsData', JSON.stringify(productsRegistered))
             setProduct({
                 name: '',
