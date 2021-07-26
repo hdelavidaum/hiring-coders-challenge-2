@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 
 // PAGES
-import { HomePage, ProductsPage } from '../pages'
+import { HomePage, ProductsPage, UsersPage } from '../pages'
 
 
 const Router = () => {
@@ -14,7 +14,7 @@ const Router = () => {
                 <ProductsPage />
             </Route>
             <Route path="/users">
-                {"Users"}
+                <UsersPage />
             </Route>
         </Switch>
     )

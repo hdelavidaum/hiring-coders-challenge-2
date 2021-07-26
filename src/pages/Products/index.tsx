@@ -1,4 +1,4 @@
-import { BaseSyntheticEvent ,useState, useCallback } from 'react'
+import { BaseSyntheticEvent, useState, useCallback } from 'react'
 
 // COMPONENTS
 import { Button, Input } from '../../components'
@@ -69,6 +69,11 @@ const ProductsPage = ():JSX.Element => {
 
             productsRegistered = {...productsRegistered, ...product}
             window.localStorage.setItem('productsData', JSON.stringify(productsRegistered))
+            setProduct({
+                name: '',
+                price: '',
+                quantity: undefined,
+            })
         },
         [product]
     )
